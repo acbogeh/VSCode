@@ -48,11 +48,11 @@ def getInfo(max_index_user=5):
 
     fOpen.close()
 
-    mailto_list = 'yaoqi@fullgoal.com.cn'
-    mail_host = "mail.fullgoal.com.cn"  # 设置服务器
+    mailto_list = 'yaoqi@xx.com.cn'
+    mail_host = "mail.xx.com.cn"  # 设置服务器
     mail_user = "yaoqi"  # 用户名
     mail_pass = "Password456"  # 口令 
-    mail_postfix = "fullgoal.com.cn"  # 发件箱的后缀
+    mail_postfix = "xx.com.cn"  # 发件箱的后缀
     me = "hello" + "<" + mail_user + "@" + mail_postfix + ">"  # 这里的hello可以任意设置，收到信后，将按照设置显示
     content = 'This is test mail!'#邮件正文
     msg = MIMEMultipart()
@@ -60,7 +60,7 @@ def getInfo(max_index_user=5):
     msg.attach(body)
     msg['Subject'] = "Subject Test"  # 设置主题
     msg['From'] = me  
-    msg['To'] = 'yaoqi@fullgoal.com.cn'
+    msg['To'] = 'yaoqi@xx.com.cn'
     #附件内容，若有多个附件，就添加多个part, 如part1，part2，part3
     part = MIMEBase('application', 'octet-stream')
     # 读入文件内容并格式化，此处文件为当前目录下，也可指定目录 例如：open(r'/tmp/123.txt','rb')
