@@ -10,9 +10,9 @@ def _format_addr(s):
     name, addr = parseaddr(s)
     return formataddr((Header(name, 'utf-8').encode(), addr))
 
-from_addr = 'yaoqi@fullgoal.com.cn'
+from_addr = 'yaoqi@XXX.com.cn'
 password = 'Password123'
-to_addr = 'yaoqi@fullgoal.com.cn'
+to_addr = 'yaoqi@XXXX.com.cn'
 smtp_server = '192.168.1.21'
 
 # 邮件对象:
